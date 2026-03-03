@@ -9,10 +9,22 @@ import SwiftUI
 
 struct IngredientHeader: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        header
     }
 }
 
 #Preview {
     IngredientHeader()
+}
+
+private var header: some View {
+    VStack(alignment: .leading, spacing: 8) {
+        Text("What's in your fridge?")
+            .font(.largeTitle.weight(.regular))
+            .foregroundStyle(.primary)
+        
+        Text("Add ingrediants and we'll craft the perfect meal for you!")
+            .font(.subheadline)
+            .foregroundStyle(.secondary)
+    }
 }

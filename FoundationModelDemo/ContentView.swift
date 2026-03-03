@@ -13,7 +13,7 @@ struct ContentView: View {
             Color(.systemGroupedBackground)
                 .ignoresSafeArea(edges: .all)
             VStack {
-                header
+            
                
                
             }
@@ -25,14 +25,4 @@ struct ContentView: View {
     ContentView()
 }
 
-private var header: some View {
-    VStack(alignment: .leading, spacing: 8) {
-        Text("What's in your fridge?")
-            .font(.largeTitle.weight(.regular))
-            .foregroundStyle(.primary)
-        
-        Text("Add ingrediants and we'll craft the perfect meal for you!")
-            .font(.subheadline)
-            .foregroundStyle(.secondary)
-    }
-}
+
