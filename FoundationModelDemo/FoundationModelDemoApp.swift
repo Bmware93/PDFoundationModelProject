@@ -11,7 +11,7 @@ import SwiftUI
 struct FoundationModelDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AvailibilityView()
         }
     }
 }
