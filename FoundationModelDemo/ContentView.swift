@@ -9,16 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color(.systemGroupedBackground)
+                .ignoresSafeArea(edges: .all)
+            VStack {
+                header
+               
+               
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+}
+
+private var header: some View {
+    VStack(alignment: .leading, spacing: 8) {
+        Text("What's in your fridge?")
+            .font(.largeTitle.weight(.regular))
+            .foregroundStyle(.primary)
+        
+        Text("Add ingrediants and we'll craft the perfect meal for you!")
+            .font(.subheadline)
+            .foregroundStyle(.secondary)
+    }
 }
