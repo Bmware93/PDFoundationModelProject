@@ -9,7 +9,6 @@ import SwiftUI
 
 enum Moods: String, CaseIterable {
     case lowEnergy = "Low Energy"
-    case mediumEnergy = "Medium Energy"
     case highEnergy = "High Energy"
     case needComfort = "Need Comfort"
     case needFuel = "Need Fuel"
@@ -20,10 +19,8 @@ enum Moods: String, CaseIterable {
         switch self {
         case .lowEnergy:
             "🛋️"
-        case .mediumEnergy:
-            "⚡"
         case .highEnergy:
-            "🚀"
+            "⚡️"
         case .needComfort:
             "🥰"
         case .needFuel:
@@ -37,7 +34,6 @@ enum Moods: String, CaseIterable {
     var description: String {
         switch self {
         case .lowEnergy:      return "Couch vibes only."
-        case .mediumEnergy:   return "Keep it moving."
         case .highEnergy:     return "Go big or go home."
         case .needComfort:    return "Hugs on a plate."
         case .needFuel:       return "Power bites, activate."
@@ -48,11 +44,10 @@ enum Moods: String, CaseIterable {
     var color: Color {
         switch self {
         case .lowEnergy:      return Color(.systemBlue).opacity(0.8)
-        case .mediumEnergy:   return Color(.systemYellow)
         case .highEnergy:     return Color(.systemOrange)
         case .needComfort:    return Color(.systemPink)
         case .needFuel:       return Color(.systemRed)
-        case .quickAndEasy:   return Color(.systemTeal)
+        case .quickAndEasy:   return Color(.systemYellow)
         case .slowAndMindful: return Color(.systemGreen)
         }
     }
